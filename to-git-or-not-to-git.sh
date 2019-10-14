@@ -1,3 +1,2 @@
-my_id_not_your=52817473
-echo $my_id_not_your
-echo '`'
+this_is_my_id=52817473
+echo $this_is_my_id

@@ -1,2 +1,2 @@
-id=52817473
-echo "52817473"
+my_id_not_your=52817473
+echo $id

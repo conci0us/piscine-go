@@ -1,1 +1,1 @@
-find look -type f -name '[az]*[az]'
+find . -name "a*" -o -name "*z" -o -name "a!"

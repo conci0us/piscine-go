@@ -1,1 +1,1 @@
-curl -I  https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json
+curl  -s cat  https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json | jq -c'.[]|select (.id== 70).name'

@@ -1,0 +1,1 @@
+find your_directory -type f -name '[az]*[az]'

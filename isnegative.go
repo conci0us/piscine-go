@@ -1,6 +1,6 @@
-package piscine
+package main
 
-import "github.com/01-edu/z01"
+import "piscine"
 
 func IsNegative(nb int) {
 	if int < 0 {

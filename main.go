@@ -1,11 +1,9 @@
-package main 
+package main
 
 import "github.com/01-edu/z01"
-
-func main() {
-
-	for i := 'a'; <= 'z'; i++ {
-		z01.PrintRune(i)
-	}
+func main() 
+{for i := 'a'; <= 'z'; i++ {
+    z01.PrintRune(i)
+    }
     z01.PrintRune('\n')
-}
+    }

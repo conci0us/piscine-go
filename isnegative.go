@@ -1,6 +1,5 @@
 package main
 
-import "piscine"
 
 func IsNegative(nb int) {
 	if int < 0 {

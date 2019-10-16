@@ -1,11 +1,12 @@
 package main 
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func main (){
 
 	
-	var Latinalphabet string = "abcdefghijklmnopqrstuvwxyz"
-	fmt.Println(Latinalphabet) 
-
+	for i := 'a'; <= 'z'; i++ {
+		z01.PrintRune(i)
+	}
+ z01.PrintRune('\n')
 }

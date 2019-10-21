@@ -1,4 +1,3 @@
-
 package piscine
 
 func StrLen(str string) int {

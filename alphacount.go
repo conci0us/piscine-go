@@ -1,4 +1,3 @@
-
 package piscine
 
 func AlphaCount(str string) int {

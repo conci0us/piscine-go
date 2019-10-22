@@ -10,14 +10,22 @@ func size(n int) int {
 	return res
 }
 
+func tabLen(table []int) int {
+	length := 0
+	for range table {
+		length++
+	}
+	return length
+}
+
 func sortArr(arr []int) {
-	change := false
-	for i := 0; i < TabLen(table)-1; i++ {
-		if table[i] > table[i+1] {
-			temp := table[i]
-			table[i] = table[i+1]
-			table[i+1] = temp
-			change = true
+	for i := 0; i < tabLen(arr)-1; i++ {
+		if arr[i] > arr[i+1] {
+			temp := arr[i]
+			arr[i] = arr[i+1]
+			arr[i+1] = temp
+		}
+	}
 }
 
 func PrintNbrInOrder(n int) {

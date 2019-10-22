@@ -29,7 +29,7 @@ func PrintNbrInOrder(n int) {
 		}
 		array[i] = (n / ten) % 10
 	}
-	SortIntegerTable(array[:])
+	SortInteger(array[:])
 	for i := 0; i < size(n); i++ {
 		z01.PrintRune(rune(array[i] + 48))
 	}

@@ -32,6 +32,7 @@ func PrintNbrInOrder(n int) {
 
 	SortIntegerTable(array[:])
 	
+	
 	for i := 0; i < size(n); i++ {
 		z01.PrintRune(rune(array[i] + 48))
 	}

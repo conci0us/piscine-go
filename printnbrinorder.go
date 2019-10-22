@@ -32,6 +32,6 @@ func PrintNbrInOrder(n int) {
 
 
 	for i := 0; i < size(n); i++ {
-		z01.PrintRune(rune(array[i] + 48))
+		    z01.PrintRune(rune(array[i] + 48))
 	}
 }

@@ -10,7 +10,7 @@ func size(n int) int {
 	return res
 }
 
-splitNumber (number/10, append(arr, number%10)) {
+func PrintNbrInOrder(n int) {
 
 	if n == 0 {
 		z01.PrintRune('0')
@@ -29,8 +29,6 @@ splitNumber (number/10, append(arr, number%10)) {
 		}
 		array[i] = (n / ten) % 10
 	}
-
-	SortIntegerTable(array[:])
 
 	for i := 0; i < size(n); i++ {
 		z01.PrintRune(rune(array[i] + 48))

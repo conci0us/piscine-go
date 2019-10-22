@@ -1,25 +1,46 @@
 package piscine
 
-import (
-	"sort"
+import "github.com/01-edu/z01"
 
-	"github.com/01-edu/z01"
-)
+func size(n int) int {
+	res := 0
+	for ; n > 0; n /= 10 {
+		res++
+	}
+	return res
+}
+
+func sortArr(arr []int) {
+	change := false
+	for i := 0; i < TabLen(table)-1; i++ {
+		if table[i] > table[i+1] {
+			temp := table[i]
+			table[i] = table[i+1]
+			table[i+1] = temp
+			change = true
+}
 
 func PrintNbrInOrder(n int) {
-	var nbrs []int
 
-	for f := n; f != 0; f = (f / 10) {
-		if f != 0 {
-			k := (f % 10) + '0'
-			nbrs = append(nbrs, k)
-		} else {
-			z01.PrintRune('0')
-		}
+	if n == 0 {
+		z01.PrintRune('0')
 	}
 
-	sort.Sort(sort.IntSlice(nbrs))
-	for _, v := range nbrs {
-		z01.PrintRune(rune(v))
+	var array [19]int
+
+	for i := 0; i <= 18; i++ {
+		array[i] = 20
+	}
+
+	for i := 0; i < size(n); i++ {
+		ten := 1
+		for j := i; j > 0; j-- {
+			ten = ten * 10
+		}
+		array[i] = (n / ten) % 10
+	}
+	sortArr(array[:])
+	for i := 0; i < size(n); i++ {
+		z01.PrintRune(rune(array[i] + 48))
 	}
 }

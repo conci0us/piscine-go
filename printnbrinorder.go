@@ -29,6 +29,8 @@ func PrintNbrInOrder(n int) {
 		}
 		array[i] = (n / ten) % 10
 	}
+
+	func PrintNbrInOrder(n int)
 	for i := 0; i < size(n); i++ {
 		z01.PrintRune(rune(array[i] + 48))
 	}

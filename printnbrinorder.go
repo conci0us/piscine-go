@@ -10,7 +10,7 @@ func size(n int) int {
 	return res
 }
 
-func PrintNbrInOrder(n int) {
+return splitNumber (number/10, append(arr, number%10)) {
 
 	if n == 0 {
 		z01.PrintRune('0')

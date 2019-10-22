@@ -10,20 +10,23 @@ func size(n int) int {
 	return res
 }
 
-func tabLen(table []int) int {
+func getLen(arr []int) int {
 	length := 0
-	for range table {
+	for i := range arr {
 		length++
+		i++
 	}
 	return length
 }
 
 func sortArr(arr []int) {
-	for i := 0; i < tabLen(arr)-1; i++ {
-		if arr[i] > arr[i+1] {
-			temp := arr[i]
-			arr[i] = arr[i+1]
-			arr[i+1] = temp
+	for i := 0; i < getLen(arr); i++ {
+		for j := i + 1; j < getLen(arr); j++ {
+			if arr[i] > arr[j] {
+				temp := arr[i]
+				arr[i] = arr[j]
+				arr[j] = temp
+			}
 		}
 	}
 }

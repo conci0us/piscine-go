@@ -26,4 +26,4 @@ func lent2(d string ) int{
 		        }
 
 		        return inc
-		}
+}

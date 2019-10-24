@@ -1,9 +1,9 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func PrintWordsTables(table []string) {
-	for _, str := range table {
+	for, str := range table {
 		Printstr(str)
 		z01.PrintRune('\n')
 	}

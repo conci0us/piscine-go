@@ -9,10 +9,10 @@ func SplitWhiteSpaces(str string) []string {
 			TextToString += string(v)
 			t = append(t, TextToString)
 		}else if string(v) != " " && string(v) != "\t" && string(v) != "\n" {
-				TextToString += string(v)
+			TextToString += string(v)
 		}else{
 			if len(TextToString)>=1{
-				t = append(t, TextToString)
+			t = append(t, TextToString)
 			}
 			TextToString = ""
 		}
@@ -22,8 +22,9 @@ func SplitWhiteSpaces(str string) []string {
 func lent2(d string ) int{
 	inc:=0
 		for _, _= range d{
-			inc ++
+		inc ++
 		}
+
 		 return inc
 	}
 	
